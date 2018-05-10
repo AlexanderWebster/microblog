@@ -1,0 +1,119 @@
+2018-05-09 22:47:11,732 ERROR: Exception on /user/tendon [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 100, in user
+    next_url=next_url, prev_url=prev_url)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Castle\Documents\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Castle\Documents\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Castle\Documents\microblog\app\templates\user.html", line 41, in block "content"
+    {{getWeather(user.zipcode)}}
+jinja2.exceptions.UndefinedError: 'getWeather' is undefined
+2018-05-09 22:48:34,676 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:48:36,866 ERROR: Exception on /user/tendon [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 100, in user
+    next_url=next_url, prev_url=prev_url, weather=getWeather())
+TypeError: getWeather() missing 1 required positional argument: 'zip'
+2018-05-09 22:51:10,907 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:51:14,013 ERROR: Exception on /user/tendon [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 102, in user
+    next_url=next_url, prev_url=prev_url, weather=getWeather())
+TypeError: getWeather() missing 1 required positional argument: 'zip'
+2018-05-09 22:52:18,309 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:52:27,176 ERROR: Exception on /user/tendon [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 101, in user
+    next_url=next_url, prev_url=prev_url, weather=getWeather(user.zipcode))
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Castle\Documents\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Castle\Documents\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Castle\Documents\microblog\app\templates\user.html", line 41, in block "content"
+    {{getWeather(user.zipcode)}}
+jinja2.exceptions.UndefinedError: 'getWeather' is undefined
+2018-05-09 22:53:16,189 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:55:45,219 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:58:31,157 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:59:34,203 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]

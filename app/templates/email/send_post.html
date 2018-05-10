@@ -1,0 +1,21 @@
+<p>Dear {{ user.username }},</p>
+<p>
+    Here are the contents of the post you asked for:
+    
+    <table>
+    <tr valign="top">
+        <td><img src="{{ post.author.avatar(36) }}"></td>
+        <td>
+            <a href="">
+                {{ post.author.username }}
+            </a>
+            says:<br>{{ post.body }} 
+            
+            <br>     {{post.timestamp}} </br>
+            
+        </td>
+    </tr>
+</table>
+</p>
+<p>Sincerely,</p>
+<p>The Microblog Team</p>

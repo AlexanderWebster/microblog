@@ -1,0 +1,21 @@
+ Dear {{ user.username }}, 
+ 
+    Here are the contents of the post you asked for:
+    
+     
+     
+           
+         
+             
+                {{ post.author.username }}
+             
+            says: {{ post.body }} 
+            
+                  {{post.timestamp}}  
+            
+         
+     
+ 
+ 
+ Sincerely, 
+ The Microblog Team 

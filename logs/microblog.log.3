@@ -1,0 +1,94 @@
+2018-05-09 21:00:06,175 ERROR: Exception on /emailpost/7 [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 163, in emailpost
+    send_post(current_user, post2send)
+  File "C:\Users\Castle\Documents\microblog\app\email.py", line 38, in send_post
+    user=user),
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Castle\Documents\microblog\app\templates\email\send_post.txt", line 6, in top-level template code
+    {{post2send.id}}
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post2send' is undefined
+2018-05-09 21:03:13,143 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:03:16,801 ERROR: Exception on /emailpost/7 [GET] [in c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Castle\Documents\microblog\app\routes.py", line 163, in emailpost
+    send_post(current_user, post2send)
+  File "C:\Users\Castle\Documents\microblog\app\email.py", line 38, in send_post
+    user=user, post=post),
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Castle\Documents\microblog\app\templates\email\send_post.txt", line 6, in top-level template code
+    {{post2send.id}}
+  File "c:\users\castle\documents\microblog\venv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post2send' is undefined
+2018-05-09 21:03:49,194 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:05:51,134 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:09:15,471 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:41:04,487 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:41:10,060 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:58:13,293 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 21:59:28,514 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:00:09,694 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:00:59,728 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:04:09,278 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:04:45,543 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:06:07,587 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:06:29,974 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:13:18,346 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:14:15,585 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:14:55,461 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:16:49,126 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:17:41,348 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
+2018-05-09 22:38:51,351 INFO: Microblog startup [in C:\Users\Castle\Documents\microblog\app\__init__.py:48]
